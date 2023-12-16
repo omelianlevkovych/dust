@@ -1,1 +1,4 @@
-1
+```rust
+rustc main.rs
+rustfmt
+```
