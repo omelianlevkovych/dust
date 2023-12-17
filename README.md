@@ -11,3 +11,6 @@ cargo check
 ```
 
 https://crates.io/
+```rust
+cargo doc --open // crazy good doc generator for your dependencies
+```
