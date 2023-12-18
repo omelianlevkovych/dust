@@ -8,3 +8,7 @@ const MAX_VALUE: u32 = 100;
 
 
 So you can/should use constants when value is known at compile time and/or you need a widely accessibility.
+
+
+- Rust is statically types language, what does it mean?
+It means that Rust must know the types of all variables at compile time.
