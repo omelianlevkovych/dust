@@ -1,13 +1,10 @@
 fn main() {
     println!("Hello, world!");
-    print_something(10);
+    let x = five();
+    println!("The value of x is: {}", x);
 }
 
-fn print_something(x: i32) {
-    let y = {
-        let x = 3;
-        x + 1
-    };
-    println!("The value of y is: {y}");
+fn five() -> i32 {
+    5
 }
 
