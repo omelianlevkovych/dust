@@ -1,7 +1,6 @@
 fn main() {
-    let mut s = String::from("hello");
-    s.push_str(", world!"); // push_str() appends a literal to a String
+    let mut s1 = String::from("hello");
+    let s2 = s1;
 
-
-    println!("{s}");
+    println!("{s1}"); // error: value borrowed here after move
 }

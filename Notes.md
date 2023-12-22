@@ -21,3 +21,5 @@ Data with unknown size at compile time or a size that might change must be store
 - there can only be one owner at a time
 - when the owner goes out of scope, the value will be dropped
 
+In Rust: the memory is automatically returned once the variable that owns it goes out of scope.
+Q: How the OOP works than? How can you have instances in memory which you may resolve at some point and use them?
