@@ -1,6 +1,19 @@
 fn main() {
-    let mut s1 = String::from("hello");
-    let s2 = s1;
+    let s = String::from("hello");
 
-    println!("{s1}"); // error: value borrowed here after move
+    takes_ownership(s);
+    println!("{s}"); // error, as ownership is taken
+
+    let x = 5;
+    copy(x);
+    let y = x; // x is still valid, as i32 is Copy
+    println!("{x} {y}");
+}
+
+fn takes_ownership(some_string: String) {
+    println!("{some_string}");
+}
+
+fn copy(x: i32) {
+    println!("{x}");
 }
