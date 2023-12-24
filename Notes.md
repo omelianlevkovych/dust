@@ -23,3 +23,10 @@ Data with unknown size at compile time or a size that might change must be store
 
 In Rust: the memory is automatically returned once the variable that owns it goes out of scope.
 Q: How the OOP works than? How can you have instances in memory which you may resolve at some point and use them?
+
+
+# Literals as String Slices
+```rust
+let s = "Hello, world!";
+```
+The type of s here is &str: it's slice pointing to that specific point of the binary. This is also why string literals are immutable; &str is immutable reference.
